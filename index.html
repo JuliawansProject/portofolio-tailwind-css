@@ -5,24 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header Start -->
     <header
-      class="bg-transparent absolute top-0 left-0 w-full flex item center z-10"
+      class="bg-transparent fixed top-0 left-0 w-full flex item center z-10"
     >
       <div class="container">
-        <div class="flex items-center justify-between relatiive">
+        <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-teal-500 block py-6">Aditya</a>
+            <a href="#home" class="font-bold text-lg text-teal-500 block py-6"
+              >Aditya</a
+            >
           </div>
-          <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
-              <span class="w-[30px] h-[2px] my-2 block bg-slate-900 hamburger-line"></span>
-              <span class="w-[30px] h-[2px] my-2 block bg-slate-900 hamburger-line"></span>
-              <span class="w-[30px] h-[2px] my-2 block bg-slate-900 hamburger-line"></span>
+          <div class="flex items-center px-4 lg:hidden">
+            <button id="hamburger" class="block lg:hidden">
+              <span
+                class="hamburger-line w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300"
+              ></span>
+              <span
+                class="hamburger-line w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300"
+              ></span>
+              <span
+                class="hamburger-line w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300"
+              ></span>
             </button>
           </div>
+          <nav
+            id="nav-menu"
+            class="hidden lg:block absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:relative lg:bg-transparent lg:shadow-none lg:rounded-none lg:max-w-full lg:w-auto lg:right-0 lg:top-0"
+          >
+            <ul class="block lg:flex lg:items-center lg:space-x-6">
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base text-black py-2 mx-8 lg:mx-0 flex group-hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#about"
+                  class="text-base text-black py-2 mx-8 lg:mx-0 flex group-hover:text-teal-500"
+                  >Tentang Saya</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#portofolio"
+                  class="text-base text-black py-2 mx-8 lg:mx-0 flex group-hover:text-teal-500"
+                  >Portofolio</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#clients"
+                  class="text-base text-black py-2 mx-8 lg:mx-0 flex group-hover:text-teal-500"
+                  >Clients</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#blog"
+                  class="text-base text-black py-2 mx-8 lg:mx-0 flex group-hover:text-teal-500"
+                  >Blog</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#contact"
+                  class="text-base text-black py-2 mx-8 lg:mx-0 flex group-hover:text-teal-500"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -206,7 +264,17 @@
       </div>
     </section>
     <!-- About Section End -->
-
+    <!-- Portofolio section Start -->
+    <section id="portofolio" class="pt-35 pb-16" bg-slate-100>
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+               <h4>Portofolio</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio section End -->
     <script src="script.js"></script>
   </body>
 </html>
